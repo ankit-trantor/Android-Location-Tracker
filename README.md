@@ -26,7 +26,7 @@ You need to follow the steps bellow:
 3. Unbind "LocationService"
 4. Stop "LocationService"
 
-Note: After the "LocationService" is bound, request one-time location update or start requesting periodically location updates by calling one of the its methods from the method overloading.
+Note: After the "LocationService" becomes bound, request one-time location update or start requesting periodically location updates by calling one of the its methods from the method overloading.
 
 ---
 
