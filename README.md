@@ -9,7 +9,7 @@ Android application which tracks device's location (one-time or periodically) us
 - Minimum SDK Version: 19
 - Target SDK Version: 25
 - Realm Mobile Database Version: 2.3.0
-- IDE used for development: Android Studio
+- IDE used for development: Android Studio (recommended)
 
 ---
 
