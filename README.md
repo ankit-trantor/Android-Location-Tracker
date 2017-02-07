@@ -19,6 +19,15 @@ Supported location providers: Network, GPS, Passive
 
 You are able to request one-time location update or periodically location updates.
 
+You need to follow the steps bellow:
+
+1. Start "LocationService"
+2. Bind "LocationService"
+3. Unbind "LocationService"
+4. Stop "LocationService"
+
+Note: After the "LocationService" is bound, request one-time location update or start requesting periodically location updates by calling one of the its methods from the method overloading.
+
 ---
 
 You need to request one-time location update or periodically location updates after the "LocationService" is successfully bound in "onServiceConnected(ComponentName name, IBinder service)" overridden method of the "ServiceConnection" interface if the required application permissions are granted (see "MainActivity.class).
@@ -37,7 +46,7 @@ private ServiceConnection mLocationServiceConnection = new ServiceConnection() {
             return;
         }
 
-        // Request one-time location update or periodically location updates
+        // Request one-time location update or start requesting periodically location updates
     }
 
     @Override
