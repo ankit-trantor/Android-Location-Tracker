@@ -1,5 +1,5 @@
 # Location-Tracker
-Android application which tracks device's location (one-time or periodically) using background service and partial wake lock, and saves it into a Realm database
+Android application which tracks device's location (one-time or periodically) using background service and partial wake lock, and saves it into a Realm database.
 
 ## Device requirements
 - Android 4.4+
@@ -113,4 +113,4 @@ To stop requesting periodically location updates simply stop the service or call
 ```
 
 ### License
-Android-Location-Tracker is released under the The GNU General Public License v3.0. See "LICENSE" for more information.
+Android-Location-Tracker is released under the The GNU General Public License v3.0. See "LICENSE" file for further information.
