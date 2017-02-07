@@ -63,7 +63,7 @@ Here is an example for requesting periodically location updates with specified p
 
 - Provider: GPS
 - Minimum time interval between location updates, in milliseconds: 60000 (60 seconds, 1 minute)
-- Minimum distance between location updates, in meters: 2
+- Minimum distance between location updates, in meters: 20
 
 ```java
 locationService.requestLocationUpdates(LocationManager.GPS_PROVIDER, 60000, 20);
@@ -91,13 +91,13 @@ Here is an example for requesting periodically location updates with criteria be
 - Criteria: Fine accuracy
 - Provider: true; "true" for currently enabled location provider, "false" for not. When using "true" as a value, make sure that the device location is enabled.
 - Minimum time interval between location updates, in milliseconds: 60000 (60 seconds, 1 minute)
-- Minimum distance between location updates, in meters: 2
+- Minimum distance between location updates, in meters: 20
 
 ```java
 Criteria criteria = new Criteria();
 criteria.setAccuracy(Criteria.ACCURACY_FINE);
 
-locationService.requestLocationUpdates(criteria, true, 6000, 2);
+locationService.requestLocationUpdates(criteria, true, 6000, 20);
 ```
 
 ---
