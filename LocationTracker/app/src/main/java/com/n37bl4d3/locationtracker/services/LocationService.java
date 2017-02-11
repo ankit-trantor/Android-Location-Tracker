@@ -230,8 +230,6 @@ public class LocationService extends Service implements LocationListener {
         super.onDestroy();
         LogHelper.verboseLog("\"" + this.getClass().getName() + "\" onDestroy");
 
-        mRealm.close();
-
         if (Configuration.sIsFeatureLocationAvailable) {
             if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED || ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
                 removeLocationUpdates();
