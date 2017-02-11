@@ -235,7 +235,9 @@ public class LocationService extends Service implements LocationListener {
                 removeLocationUpdates();
             }
         }
-
+        
+        mRealm.close();
+        
         if (mWakeLock.isHeld()) {
             LogHelper.debugLog("Releasing wake lock...");
             try {
